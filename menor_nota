@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class MenorNota {
+
+    public static void main(String[] args) {
+    	int quantidade;
+        int saque;
+        Scanner d=new Scanner(System.in);
+        
+
+
+        System.out.println("DIGITE O VALOR DO SAQUE:");        
+        saque =d.nextInt();
+        
+
+        if(saque%10!=0){
+            System.out.print("Não existem notas disponiveis");
+
+        }
+
+
+        if (saque%100==0){
+            quantidade=saque/100;
+
+            System.out.println("Quantidade de notas: " + quantidade);
+            System.out.println(" RETIRADA no Valor de: R$ " + saque);
+
+        }
+        else if (saque%50==0){
+            quantidade=saque/50;
+            System.out.println("Quantidade de notas: " + quantidade);
+            System.out.println(" RETIRADA no Valor de: R$ " + saque);
+        
+        }
+        else if (saque%20==0){
+            quantidade=saque/20;
+            System.out.println("Quantidade de notas: " + quantidade);
+            System.out.println(" RETIRADA no Valor de: R$ " + saque);
+
+        }
+        else if (saque%10==0){
+            quantidade=saque/10;
+            System.out.println("Quantidade de notas: " + quantidade);
+            System.out.println(" RETIRADA no Valor de: R$ " + saque);
+
+        }
+
+    }
+}
