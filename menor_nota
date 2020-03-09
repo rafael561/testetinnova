@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HelloWorld {
+public class MenorNota {
 
 	public static void main(String[] args) {
 		int quantidade = 0;
@@ -43,7 +43,6 @@ public class HelloWorld {
 				quantidade = saque;
 			}
 			System.out.println("Quantidade de notas de R$10: " + n10);
-			System.out.println("SOBRA: " + quantidade);
 		}
 	}
 }
